@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="dev.timelxne.timeline.feature" label="SWT Timeline Library"
+    version="1.0.0.qualifier" provider-name="timelxne">
+  <plugin id="dev.timelxne.timeline" download-size="0" install-size="0"
+      version="0.0.0" unpack="false"/>
+</feature>

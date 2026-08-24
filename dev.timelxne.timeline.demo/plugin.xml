@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension id="product" point="org.eclipse.core.runtime.products">
+    <product application="org.eclipse.e4.ui.workbench.swt.E4Application" name="SWT Timeline Demo">
+      <property name="applicationXMI" value="dev.timelxne.timeline.demo/Application.e4xmi"/>
+      <property name="appName" value="SWT Timeline Demo"/>
+      <property name="clearPersistedState" value="true"/>
+      <property name="cssTheme" value="dev.timelxne.timeline.demo.theme"/>
+    </product>
+  </extension>
+  <extension point="org.eclipse.e4.ui.css.swt.theme">
+    <theme basestylesheeturi="css/default.css" id="dev.timelxne.timeline.demo.theme" label="Timeline Default"/>
+  </extension>
+</plugin>

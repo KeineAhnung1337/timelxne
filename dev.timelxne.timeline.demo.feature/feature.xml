@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="dev.timelxne.timeline.demo.feature" label="SWT Timeline Demo" version="1.0.0.qualifier" provider-name="timelxne">
+  <requires>
+    <import feature="org.eclipse.e4.rcp"/>
+    <import feature="dev.timelxne.timeline.feature"/>
+  </requires>
+  <plugin id="dev.timelxne.timeline.demo" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+</feature>

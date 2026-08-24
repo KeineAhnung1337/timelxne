@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SWT Timeline
+Bundle-SymbolicName: dev.timelxne.timeline
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: timelxne
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Export-Package: dev.timelxne.timeline
+Require-Bundle: org.eclipse.swt
+Automatic-Module-Name: dev.timelxne.timeline

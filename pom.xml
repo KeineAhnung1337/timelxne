@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.timelxne</groupId>
+  <artifactId>timeline-parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <tycho.version>5.0.3</tycho.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>21</maven.compiler.release>
+  </properties>
+
+  <modules>
+    <module>dev.timelxne.timeline.target</module>
+    <module>dev.timelxne.timeline</module>
+    <module>dev.timelxne.timeline.feature</module>
+    <module>dev.timelxne.timeline.tests</module>
+    <module>dev.timelxne.timeline.demo</module>
+    <module>dev.timelxne.timeline.demo.feature</module>
+    <module>dev.timelxne.timeline.repository</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho.version}</version>
+        <configuration>
+          <target>
+            <artifact>
+              <groupId>dev.timelxne</groupId>
+              <artifactId>dev.timelxne.timeline.target</artifactId>
+              <version>${project.version}</version>
+            </artifact>
+          </target>
+          <executionEnvironment>JavaSE-21</executionEnvironment>
+          <environments>
+            <environment><os>linux</os><ws>gtk</ws><arch>x86_64</arch></environment>
+            <environment><os>win32</os><ws>win32</ws><arch>x86_64</arch></environment>
+            <environment><os>macosx</os><ws>cocoa</ws><arch>x86_64</arch></environment>
+            <environment><os>macosx</os><ws>cocoa</ws><arch>aarch64</arch></environment>
+          </environments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

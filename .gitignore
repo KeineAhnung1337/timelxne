@@ -1,0 +1,12 @@
+/target/
+/*/target/
+/.metadata/
+/workspace/
+*.class
+*.log
+*~
+.DS_Store
+.idea/
+.classpath
+.project
+.settings/

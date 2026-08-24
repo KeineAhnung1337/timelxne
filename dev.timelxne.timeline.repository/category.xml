@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <feature url="features/dev.timelxne.timeline.feature_1.0.0.qualifier.jar"
+      id="dev.timelxne.timeline.feature" version="1.0.0.qualifier">
+    <category name="dev.timelxne.timeline"/>
+  </feature>
+  <feature url="features/dev.timelxne.timeline.demo.feature_1.0.0.qualifier.jar"
+      id="dev.timelxne.timeline.demo.feature" version="1.0.0.qualifier">
+    <category name="dev.timelxne.timeline"/>
+  </feature>
+  <category-def name="dev.timelxne.timeline" label="SWT Timeline"/>
+</site>
