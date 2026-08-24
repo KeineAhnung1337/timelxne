@@ -1,5 +1,9 @@
 # timelxne
 
+[![Build](https://github.com/KeineAhnung1337/timelxne/actions/workflows/build.yml/badge.svg)](https://github.com/KeineAhnung1337/timelxne/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/KeineAhnung1337/timelxne)](https://github.com/KeineAhnung1337/timelxne/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 `timelxne` is a dependency-light timeline widget for Java SWT and Eclipse RCP. It renders large,
 hierarchical event sets with instant markers, duration bars, aggregated root rows, filtering,
 selection details, replay-time control, and configurable event styling.
@@ -17,9 +21,14 @@ The project currently targets Eclipse Platform 4.40 and Java 21.
 - Asynchronous input indexing and coalesced background replay updates
 - p2 feature, update site, and packaged cross-platform demo products
 
-## Quick start
+## Install
 
-Build the library, tests, p2 repository, and demo products:
+Download `timelxne-p2-<version>.zip` from the
+[latest release](https://github.com/KeineAhnung1337/timelxne/releases/latest), extract it, and add
+the extracted directory as a software site or target-platform repository. Install the
+`SWT Timeline Library` feature; the demo feature is not required by consuming applications.
+
+To build the library, tests, p2 repository, and demo products from source:
 
 ```shell
 mvn verify
@@ -28,7 +37,7 @@ mvn verify
 The local p2 repository is created at:
 
 ```text
-dev.timelxne.timeline.repository/target/repository
+releng/dev.timelxne.timeline.repository/target/repository
 ```
 
 Add the `SWT Timeline Library` feature to your RCP target/product, add
@@ -57,7 +66,7 @@ threading rules, replay integration, incremental updates, and troubleshooting. S
 [API guide](docs/API.md) for the configuration surface and interaction defaults.
 
 For implementation by a coding agent, provide it with the decision-complete
-[AI implementation guide](AI_IMPLEMENTATION_GUIDE.md). The guide includes a ready-to-copy task
+[AI implementation guide](docs/AI_IMPLEMENTATION_GUIDE.md). The guide includes a ready-to-copy task
 statement, exact dependency identifiers, adapter points, forbidden approaches, and acceptance
 checks.
 
@@ -66,13 +75,13 @@ checks.
 After `mvn verify`, launch the product for your platform from:
 
 ```text
-dev.timelxne.timeline.repository/target/products/
+releng/dev.timelxne.timeline.repository/target/products/
 ```
 
 On Linux:
 
 ```shell
-dev.timelxne.timeline.repository/target/products/\
+releng/dev.timelxne.timeline.repository/target/products/\
 dev.timelxne.timeline.demo.product/linux/gtk/x86_64/timelxne-demo
 ```
 
@@ -92,15 +101,14 @@ and controls for opacity, text, and bar geometry.
 
 ## Project layout
 
-| Module | Purpose |
+| Location | Purpose |
 | --- | --- |
-| `dev.timelxne.timeline` | Public SWT timeline bundle |
-| `dev.timelxne.timeline.feature` | Library-only installable p2 feature |
-| `dev.timelxne.timeline.tests` | Unit and 100,000-event performance tests |
-| `dev.timelxne.timeline.demo` | Eclipse 4 demo application |
-| `dev.timelxne.timeline.demo.feature` | Demo feature |
-| `dev.timelxne.timeline.repository` | p2 repository and native demo products |
-| `dev.timelxne.timeline.target` | Reproducible Eclipse 4.40 target definition |
+| `bundles/` | Public SWT timeline bundle |
+| `examples/` | Eclipse 4 demo application |
+| `features/` | Library-only and demo p2 features |
+| `tests/` | Unit and 100,000-event performance tests |
+| `releng/` | Eclipse 4.40 target, p2 repository, and native demo products |
+| `docs/` | Integration, API, and AI implementation guides |
 
 ## Development
 

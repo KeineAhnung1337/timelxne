@@ -12,12 +12,12 @@ mvn verify
 ```
 
 The resulting p2 update site is
-`dev.timelxne.timeline.repository/target/repository`. During local development, add it to your
+`releng/dev.timelxne.timeline.repository/target/repository`. During local development, add it to your
 application's target definition and select the library feature:
 
 ```xml
 <location includeMode="planner" includeSource="false" type="InstallableUnit">
-  <repository location="file:/absolute/path/to/timelxne/dev.timelxne.timeline.repository/target/repository"/>
+  <repository location="file:/absolute/path/to/timelxne/releng/dev.timelxne.timeline.repository/target/repository"/>
   <unit id="dev.timelxne.timeline.feature.feature.group" version="0.0.0"/>
 </location>
 ```

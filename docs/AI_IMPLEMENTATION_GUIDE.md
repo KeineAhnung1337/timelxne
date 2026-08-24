@@ -82,7 +82,7 @@ mvn verify
 Its p2 repository is:
 
 ```text
-dev.timelxne.timeline.repository/target/repository
+releng/dev.timelxne.timeline.repository/target/repository
 ```
 
 Add this installable unit to the consuming target definition. Replace the repository path with the
@@ -90,7 +90,7 @@ real absolute local URI or the organization's published p2 URL:
 
 ```xml
 <location includeMode="planner" includeSource="false" type="InstallableUnit">
-  <repository location="file:/absolute/path/to/timelxne/dev.timelxne.timeline.repository/target/repository"/>
+  <repository location="file:/absolute/path/to/timelxne/releng/dev.timelxne.timeline.repository/target/repository"/>
   <unit id="dev.timelxne.timeline.feature.feature.group" version="0.0.0"/>
 </location>
 ```
@@ -318,7 +318,7 @@ The implementing agent must report:
 5. Any unresolved assumption, missing application type, or manual installation step.
 
 For additional context—not replacement instructions—see `docs/INTEGRATION.md`, `docs/API.md`, and
-the working demo in `dev.timelxne.timeline.demo`.
+the working demo in `examples/dev.timelxne.timeline.demo`.
 
 ## If the task is to modify this library itself
 

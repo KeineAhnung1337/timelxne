@@ -15,13 +15,13 @@
   </properties>
 
   <modules>
-    <module>dev.timelxne.timeline.target</module>
-    <module>dev.timelxne.timeline</module>
-    <module>dev.timelxne.timeline.feature</module>
-    <module>dev.timelxne.timeline.tests</module>
-    <module>dev.timelxne.timeline.demo</module>
-    <module>dev.timelxne.timeline.demo.feature</module>
-    <module>dev.timelxne.timeline.repository</module>
+    <module>releng/dev.timelxne.timeline.target</module>
+    <module>bundles/dev.timelxne.timeline</module>
+    <module>features/dev.timelxne.timeline.feature</module>
+    <module>tests/dev.timelxne.timeline.tests</module>
+    <module>examples/dev.timelxne.timeline.demo</module>
+    <module>features/dev.timelxne.timeline.demo.feature</module>
+    <module>releng/dev.timelxne.timeline.repository</module>
   </modules>
 
   <build>
