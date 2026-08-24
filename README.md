@@ -56,6 +56,11 @@ See [Integration guide](docs/INTEGRATION.md) for target-platform setup, a comple
 threading rules, replay integration, incremental updates, and troubleshooting. See
 [API guide](docs/API.md) for the configuration surface and interaction defaults.
 
+For implementation by a coding agent, provide it with the decision-complete
+[AI implementation guide](AI_IMPLEMENTATION_GUIDE.md). The guide includes a ready-to-copy task
+statement, exact dependency identifiers, adapter points, forbidden approaches, and acceptance
+checks.
+
 ## Try the demo
 
 After `mvn verify`, launch the product for your platform from:
